@@ -32,13 +32,14 @@ class Consultas {
         while (val.hasNext()) {
             ObjectValues ov = (ObjectValues) val.next();
 
-            System.out.println("DNI: " + ov.getByAlias("dni")
-                    + "\n Nombre: " + ov.getByAlias("nombre")
-                    + "\n Direccion: " + ov.getByAlias("direccion")
-                    + "\n Edad: " + ov.getByAlias("edad")
-                    + "\n Nacionalidad: " + ov.getByAlias("nacionalidad"));
+            System.out.println("\nDNI: " + ov.getByAlias("dni")
+                    + "\n Nombre:      " + ov.getByAlias("nombre")
+                    + "\n Direccion:      " + ov.getByAlias("direccion")
+                    + "\n Edad:      " + ov.getByAlias("edad")
+                    + "\n Nacionalidad:      " + ov.getByAlias("nacionalidad")
+                    + "\n\n ------------------------------------------------------");
 
-            odb.close();
+//            odb.close();
         }
     }
 
@@ -55,12 +56,13 @@ class Consultas {
         while (val.hasNext()) {
             ObjectValues ov = (ObjectValues) val.next();
 
-            System.out.println("Codigo: " + ov.getByAlias("cod")
-                    + "\n Titulo: " + ov.getByAlias("Titulo")
-                    + "\n Categoria: " + ov.getByAlias("Categoria")
-                    + "\n Precio: " + ov.getByAlias("Precio")
-                    + "\n Fecha Publicacion: " + ov.getByAlias("fechaPublicacion"));
-            odb.close();
+            System.out.println("\nCodigo: " + ov.getByAlias("cod")
+                    + "\n Titulo:      " + ov.getByAlias("Titulo")
+                    + "\n Categoria:      " + ov.getByAlias("Categoria")
+                    + "\n Precio:      " + ov.getByAlias("Precio")
+                    + "\n Fecha Publicacion:      " + ov.getByAlias("fechaPublicacion")
+                    + "\n\n ------------------------------------------------------ \n");
+            //  odb.close();
         }
 
     }

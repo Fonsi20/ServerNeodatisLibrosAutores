@@ -44,6 +44,7 @@ public class LibrosAutoresNeodatis {
                     break;
                 case 3:
                     server.close();
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("'Error', elija una opción porfavor");
